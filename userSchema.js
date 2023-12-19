@@ -2,7 +2,7 @@
 let {Sequelize,Model,DataTypes} = require('sequelize')
 
 // connection
-let sequelizeCon = new Sequelize({host:"localhost",username:"root",password:"",dialect:"mysql",database:"demoapi"});
+let sequelizeCon = new Sequelize({host:"localhost",username:"root",password:"",dialect:"mysql",database:"demo"});
 
 // authenticate
 sequelizeCon.authenticate().then(()=>{console.log("connected to db")}).catch((error)=>{ console.log("db connection error",error) })
